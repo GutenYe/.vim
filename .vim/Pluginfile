@@ -1,0 +1,71 @@
+" ¤theme: dual light/dark, selective contrast
+"Bundle 'Solarized'
+Bundle 'altercation/vim-colors-solarized'
+
+"Bundle 'hallison/vim-markdown'
+"Bundle 'tpople/vim-markdown'
+Bundle 'tangledhelix/vim-octopress'
+
+Bundle 'sjl/gundo.vim'
+Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'godlygeek/tabular'
+
+Bundle 'Figlet.vim'
+Bundle 'DirDiff.vim'
+
+Bundle 'rtorrent-syntax-file'
+Bundle 'nginx.vim'
+
+"Bundle 'file:///home/guten/dev/one/vim/guten'
+Bundle 'gnote'
+Bundle 'guten'
+"Bundle 'file:///home/guten/dev/one/vim/gnote'
+"bundle 'file:///home/guten/dev/one/vim/digraphs'
+
+Bundle 'genutils'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'The-NERD-tree'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'a.vim'
+Bundle 'utl.vim'
+Bundle 'vim-addon-manager'
+
+" Bundle 'gtd'
+" Bundle 'AGTD'
+Bundle 'vim-task'
+" Bundle 'vimwiki' confict with markdown.
+Bundle 'VikiDeplate'
+Bundle 'notes.vim' 
+
+""" language & dev
+Bundle 'fugitive.vim'
+Bundle 'c.vim'
+" Bundle 'jnwhiteh/vim-golang'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'lua.vim'
+Bundle 'gem.vim'
+Bundle 'Markdown'
+Bundle 'cespare/vim-toml'
+"" web
+Bundle 'html5.vim'
+" Tools for fast XHTML and CSS coding 
+Bundle 'mattn/zencoding-vim'
+" Bundle 'javascript.vim' error
+Bundle 'vim-coffee-script'
+Bundle 'JSON.vim'
+Bundle 'groenewege/vim-less'
+" Bundle 'rails.vim'
+Bundle 'tpope/vim-rails'
+Bundle 'Handlebars'
+
+Bundle 'ebnf.vim'
+Bundle 'info.vim'
+Bundle 'bbommarito/vim-slim'  
+Bundle 'matchit.zip'
+Bundle 'Textile-for-VIM'
+" Bundle 'slimv.vim'
+
+" vim: ft=vim

@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/india/.bundler/ruby/1.8/html5-rails-28ddbda874b6/lib/html5/rails'
+let g:netrw_dirhist_2='/home/india/work/nytla/db/migrate'
+let g:netrw_dirhist_3='/home/india/work/nytla/app/controllers'
+let g:netrw_dirhist_4='/home/india/work/nytla/app/admin'
+let g:netrw_dirhist_5='/home/india/work/nytla/config/initializers'
+let g:netrw_dirhist_6='/home/india/work/nytla/spec/controllers/profile'

@@ -1,0 +1,145 @@
+snippet qsgs
+	module("extensions._File_", package.seeall)
+	extension = sgs.Package("_File_")
+
+	_General_ = sgs.General(extension, "_General_", "_Kingdom_", "4", true)
+	-- _General_ = extensions._File_._General_
+
+	_General_:addSkill(_Skill_)
+
+	sgs.LoadTranslationTable{
+		["_General_"] = "",
+		["#_General_"] = "",
+		["designer:_General_"] = "丨LUA:Guten",
+		["cv:_General_"] = "",
+		["illustrator:_General_"] = "",
+			["_Skill_"] = "",
+			[":_Skill_"] = "",	
+	}
+snippet ViewAsSkill
+	${1}_Guten_ = sgs.CreateViewAsSkill{
+		name = "_Guten_",
+		n = 1,
+
+		view_filter = function(self, selected, to_select)
+			return #selected < 1 and 
+				to_select:getSuit() == sgs.Card_Club and not to_select:isEquipped()
+		end,
+
+		view_as = function(self, cards)
+			if #cards == 1 then
+				local card = cards[1]
+				local acard = _Guten__card:clone()
+				--local acard = sgs.Sanguosha:cloneCard("snatch", card:getSuit(), card:getNumber())
+				acard:addSubcard(card)
+
+				return acard
+			end
+		end,
+
+		--enabled_at_play = function(self, player)
+		--end,
+
+		--enabled_at_response = function(self, player, pattern)
+		--end,
+
+		--enabled_at_nullification = function(self, player)
+		--end,
+	}
+snippet SkillCard
+	${1}_Guten_ = sgs.CreateSkillCard{
+		name = "_Guten_",
+		target_fixed = false,
+		will_throw = true,
+
+		--filter = function(self, targets, to_select, player) 
+		--end,
+
+	  --feasible = function(self, targets, player)
+		--end,
+
+		on_effect = function(self, effect)
+			local from = effect.from
+			local to = effect.to
+			local room = to:getRoom()
+
+			room:playSkillEffect("_Guten_")
+		end,
+
+		--[[
+		on_use = function(self, room, source, targets)
+			room:playSkillEffect("_Guten_")
+		end,
+		--]]
+	}
+snippet TriggerSkill
+	${1}_Guten_ = sgs.CreateTriggerSkill{
+		name = "_Guten_",
+		events = {sgs.Damaged},
+		frequency = sgs.Skill_NotFrequent,
+		
+		--[[
+		can_trigger = function(self, target) 
+			return target:hasSkill("_Guten_") and target:isAlive()
+			-- return not target:hasSkill("_Guten_") -- check me:isDead() in below.
+		end,
+		--]]
+
+		on_trigger = function(self, event, player, data)
+			local room = player:getRoom()
+			--local me = room:findPlayerBySkillName("_Guten_")	
+
+			if room:askForSkillInvoke(player, "_Guten_") then
+				room:playSkillEffect("_Guten_")
+			end
+		end,
+	}
+snippet ProhibitSkill
+	${1}_Guten_ = sgs.CreateProhibitSkill{
+		name = "_Guten_",
+
+		is_prohibited = function(self, from, to, card)
+			return to:isKongcheng() and 
+				(card:inherits("Slash") or card:inherits("Duel"))
+		end,
+	}
+snippet DistanceSkill
+	${1}_Guten_ = sgs.CreateDistanceSkill{
+		name = "_Guten_",
+
+		correct_func = function(self, from, to)
+			if from:hasSkill("_Guten_") then
+				return -1
+			else
+				return 0
+			end
+		end,
+	}
+snippet FilterSkill
+	${1}_Guten_ = sgs.CreateFilterSkill{
+		name = "_Guten_",
+
+		view_filter = function(self, to_select)
+			return to_select:gutSuit() == sgs.Card_Spade
+		end,
+
+		view_as = function(self, card)
+			local acard = card:clone()
+			acard:setSuit(sgs.Card_Heart)
+			acard:setNumber(card:getNumber())
+			acard:setSkillName("_Guten_")
+
+			return acard
+		end,
+	}
+snippet qsgslog
+	${1}-- $msg %from %to %card
+	-- #msg %from %to %arg %arg2
+	local log = sgs.LogMessage()
+	log.type = "$_Name_"
+	log.from = from
+	log.to:append(to)
+	log.card_str = card:getEffectIdString()
+	room:sendLog(log)
+
+
