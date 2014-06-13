@@ -1,0 +1,1 @@
+/home/guten/dev/one/vim/json5.vim

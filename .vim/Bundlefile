@@ -1,0 +1,109 @@
+" ¤theme: dual light/dark, selective contrast
+NeoBundle 'altercation/vim-colors-solarized'
+
+"¤core
+NeoBundle 'scrooloose/nerdtree'       " comment
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'bling/vim-airline'         " statusline and tabline
+NeoBundle 'Shougo/unite.vim'        " not work well with sudo
+NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'nelstrom/vim-visual-star-search'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-repeat'
+"NeoBundle 'spolu/dwm.vim'
+"NeoBundle 'yegappan/mru'
+"NeoBundle 'fholgado/minibufexpl.vim'
+"NeoBundle 'vim-scripts/YankRing.vim'
+NeoBundle 'YankRing.vim'
+NeoBundle 'tpope/vim-abolish'
+
+" ¤complete
+NeoBundle 'Shougo/neocomplete.vim'
+"NeoBundle 'Valloric/YouCompleteMe'
+
+" ¤snip
+"NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'tomtom/tlib_vim'
+"NeoBundle 'garbas/vim-snipmate'
+NeoBundle 'Shougo/neosnippet.vim'
+"NeoBundle 'Shougo/context_filetype.vim'
+"NeoBundle 'Shougo/neosnippet-snippets'
+"NeoBundle 'SirVer/ultisnips'
+"NeoBundle 'honza/vim-snippets'
+
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mattn/gist-vim'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+" ¤git
+NeoBundle 'tpope/vim-fugitive'
+" when edit a file, auto show git diff with - + in leftside
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'scrooloose/syntastic'
+" ¤lang
+NeoBundle 'Dart'
+" NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'vim-ruby/vim-ruby'
+" NeoBundle 'lua.vim'
+NeoBundle 'gem.vim'
+NeoBundle 'Markdown'
+NeoBundle 'cespare/vim-toml'
+NeoBundle 'c.vim'
+"NeoBundle 'vim-scripts/a.vim'
+NeoBundle 'rosstimson/bats.vim'
+
+"" web
+NeoBundle 'html5.vim'
+"NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'vim-coffee-script'
+NeoBundle 'leshill/vim-json'
+
+NeoBundle 'groenewege/vim-less'
+" NeoBundle 'rails.vim'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'Handlebars'
+NeoBundle 'vim-ember-script'
+NeoBundle 'vim-emblem'
+NeoBundle 'Keithbsmiley/rspec.vim'
+
+"NeoBundle 'hallison/vim-markdown'
+"NeoBundle 'tpople/vim-markdown'
+NeoBundle 'tangledhelix/vim-octopress'
+
+NeoBundle 'sjl/gundo.vim'
+
+NeoBundle 'Figlet.vim'
+
+NeoBundle 'rtorrent-syntax-file'
+NeoBundle 'nginx.vim'
+
+NeoBundle 'json5.vim'
+NeoBundle 'gnote'
+NeoBundle 'guten'
+
+NeoBundle 'genutils'
+NeoBundle 'L9'
+NeoBundle 'FuzzyFinder'
+"NeoBundle 'MarcWeber/vim-addon-mw-utils'
+NeoBundle 'utl.vim'
+"NeoBundle 'vim-addon-manager'
+
+" NeoBundle 'gtd'
+" NeoBundle 'AGTD'
+NeoBundle 'vim-task'
+" NeoBundle 'vimwiki' confict with markdown.
+NeoBundle 'VikiDeplate'
+NeoBundle 'notes.vim'
+
+
+NeoBundle 'ebnf.vim'
+NeoBundle 'info.vim'
+NeoBundle 'bbommarito/vim-slim'
+NeoBundle 'matchit.zip'
+NeoBundle 'Textile-for-VIM'
+" NeoBundle 'slimv.vim'
+
+" vim: ft=vim

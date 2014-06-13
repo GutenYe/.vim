@@ -1,0 +1,30 @@
+snippet script
+  <script src='${1:TARGET}'></script>${2}
+
+snippet css
+  <link rel='stylesheet' href='${1:TARGET}'>${2}
+
+snippet html
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Hello</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="x" rel="stylesheet"> -->
+    <!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
+  </head>
+  <body>
+
+  <script>
+    window.pd = function() { console.log.apply(console, arguments) }
+
+    /*
+    var a = document.getElementById("foo")
+    a.addEventListener("click", function(e) {
+      ..
+    })
+    */
+  </script>
+    </body>
+  </html>

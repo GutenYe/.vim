@@ -1,0 +1,34 @@
+snippet    spec_helper
+abbr       require
+  require 'spec_helper'
+
+snippet     spec
+abbr        global structure
+  require 'spec_helper'
+
+  describe ${1} do
+    ${2}
+  end
+
+snippet      spec_model
+abbr         moban
+  it { should have_db_column(:name).of_type(:string) }
+
+  it { should belong_to(:user) }
+  it { should have_many(:comments) }
+
+snippet      spec_serializer
+abbr         moban
+  it { should have_attribute(:id) }
+
+  it { should have_one(:user) }
+  it { should have_many(:comments) }
+
+snippet      spec_mailer
+abbr         moban
+  let(:user) { create(:user) }
+  subject { MyMailer.wellcome(user) }
+
+  it { should deliver_to(user.email) }
+  it { should have_subject(/POPPUP/) }
+  it { should have_body_text(/./)  }
