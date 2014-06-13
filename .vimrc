@@ -10,7 +10,7 @@ EOF
 " ¤bundle "{{{1
 set nocompatible
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
@@ -21,6 +21,7 @@ NeoBundle 'Shougo/vimproc', {
   \    },
   \ }
 runtime Bundlefile
+call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 "}}}1
@@ -47,7 +48,7 @@ if $OS=="Windows_NT" | let $ISWIN32=1 | else | let $ISWIN32=0 | end
 " set runtimepath+=~/.vim/pkgs/alternate,~/.vim/pkgs/book/,~/.vim/pkgs/guten,~/.vim/pkgs/comment,~/.vim/pkgs/gnote,~/.vim/pkgs/log,~/.vim/pkgs/pacman_search,~/.vim/pkgs/tst,~/.vim/pkgs/gnote2,~/.vim/pkgs/vim-rails " ~/dev/rb/gem.vim/  " ~/.vim/pkgs/en: no such file /opt/en/
 set encoding=utf-8  " cp936.ms for plugin/math.vim ywnok: ms gim(:chinese) encoding_err
 set langmenu=en_US.UTF-8 " gui menu language
-lang en_US.utf8
+lang en_US.UTF-8
 
 set wildignore=*~,*.o,*.obj
 

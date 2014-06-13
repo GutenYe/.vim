@@ -80,9 +80,9 @@ NeoBundle 'Figlet.vim'
 NeoBundle 'rtorrent-syntax-file'
 NeoBundle 'nginx.vim'
 
-NeoBundle 'json5.vim'
-NeoBundle 'gnote'
-NeoBundle 'guten'
+NeoBundle 'GutenYe/guten.vim'
+NeoBundle 'GutenYe/gnote.vim'
+NeoBundle 'GutenYe/json5.vim'
 
 NeoBundle 'genutils'
 NeoBundle 'L9'
@@ -96,12 +96,12 @@ NeoBundle 'utl.vim'
 NeoBundle 'vim-task'
 " NeoBundle 'vimwiki' confict with markdown.
 NeoBundle 'VikiDeplate'
-NeoBundle 'notes.vim'
-
+"NeoBundle 'xolox/vim-misc'
+"NeoBundle 'xolox/vim-notes'
 
 NeoBundle 'ebnf.vim'
 NeoBundle 'info.vim'
-NeoBundle 'bbommarito/vim-slim'
+NeoBundle 'slim-template/vim-slim'
 NeoBundle 'matchit.zip'
 NeoBundle 'Textile-for-VIM'
 " NeoBundle 'slimv.vim'
